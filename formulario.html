@@ -14,7 +14,24 @@
     -->
     <script type="module" src="script.js"></script>
   </head>
-  <script>src="script.js"</script>
+  <script>function getLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+      alert("La geolocalización no está soportada por este navegador.");
+    }
+  }
+  
+  function showPosition(position) {
+    console.log("Latitud: " + position.coords.latitude +
+    " Longitud: " + position.coords.longitude);
+  }</script>
+  <script>
+    function enviar() {
+      // Acciones a realizar cuando se envía el formulario
+      alert("¡Gracias por enviar el formulario!");
+    }
+  </script>
   <body onload="getLocation()">
     <!--formularios-->
     <!--paleta de colores por definir-->
@@ -41,7 +58,7 @@
       <h3>Mensaje</h3>
       <textarea id="textarea"></textarea>
       <!--mensaje de aviso que se envio o de que la informacion esta mal-->
-      <button>Enviar</button>
+      <button onclick="enviar()">Enviar</button>
     </div>
     <!--informacion y redes sociales-->
     <!--mapa de google-->
@@ -76,7 +93,9 @@
         <a title="Instagram" rel="nofollow" href="https://www.instagram.com"
           ><img id="logo" src="https://cdn.iconscout.com/icon/free/png-256/instagram-logo-3610064-3014829.png" alt="Instagram"></a
         >
+        
       </ul>
-    </div>
+      
+    </div>  
   </body>
 </html>

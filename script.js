@@ -10,3 +10,4 @@ function showPosition(position) {
   console.log("Latitud: " + position.coords.latitude +
   " Longitud: " + position.coords.longitude);
 }
+
