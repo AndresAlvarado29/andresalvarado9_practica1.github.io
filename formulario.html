@@ -3,7 +3,7 @@
   <head>
     <title>Home</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <!--
       link de referencia para realizar la practica:
@@ -12,41 +12,67 @@
       http://www.timbiskup.com/contact
       https://www.creativosonline.org/contacto
     -->
-    <link rel="stylesheet" href="estilo.css" />
     <script type="module" src="script.js"></script>
   </head>
   <body>
     <!--formularios-->
     <!--paleta de colores por definir-->
-    <main>
-      <h1>Formulario de Contacto</h1>
-    </main>
-    <h3>Nombre Completo</h3>
-    <input placeholder="Nombres">
-    <input placeholder="Apellidos">
-    <h3>Email</h3>
-    <input placeholder="Correo electronico">
-    <h3>Direccion</h3>
-    <input placeholder="Calle principal">
-    <input placeholder="Calle secundaria">
-    <h3>Numero de celular</h3>
-    <input placeholder="0999999999">
-    <h3>Mensaje</h3>
-    <textarea></textarea>
-    <!--mensaje de aviso que se envio o de que la informacion esta mal-->
-    <button>Enviar</button>
+    <div id="barra">
+      <a id="barraop" href="/index.html">Principal</a>
+    </div>
+    <div id="form">
+      <main>
+        <h1>Formulario de Contacto</h1>
+      </main>
+      <h3>Nombre Completo</h3>
+      <input placeholder="Nombres" />
+      <input placeholder="Apellidos" />
+      <h3>Email</h3>
+      <input placeholder="Correo electronico" />
+      <h3>Direccion</h3>
+      <input placeholder="Calle principal" />
+      <input placeholder="Calle secundaria" />
+      <h3>Numero de celular</h3>
+      <input placeholder="0999999999" />
+      <h3>Mensaje</h3>
+      <textarea id="textarea"></textarea>
+      <!--mensaje de aviso que se envio o de que la informacion esta mal-->
+      <button>Enviar</button>
+    </div>
     <!--informacion y redes sociales-->
-    <p>Nuestra oficina fisica se encuentra en la siguiente direccion</p>
     <!--mapa de google-->
-    <div id= "map"></div>
-    <script src= "https://maps.app.goo.gl/HEiw7ydM2XwLUSFu7"></script>
+    <div id="map">
+      <p>Nuestra oficina fisica se encuentra en la siguiente direccion</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.5341712932654!2d-79.17326402568499!3d-3.462713641876961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ccbb253c73a7ff%3A0x6e0f4de46cad5dc!2sZhila%20Bar!5e0!3m2!1ses!2sec!4v1681869676395!5m2!1ses!2sec"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div></div>
     <!--publicidad-->
-    <li>
-    <a  title="Facebook" rel="nofollow" href="http://www.facebook.com">Facebook</a>
-    <a title="Twitter"  rel="nofollow" href="http://www.twitter.com">Twitter</a>
-    <a title="Youtube" rel="nofollow" href="https://www.youtube.com">Youtube</a>
-    <a title="Pinterest" rel="nofollow" href="https://www.pinterest.com">Pinterest</a>
-    <a title="Instagram" rel="nofollo" href="https://www.instagram.com">Instagram</a>
-    </li>
+    <div id="redes">
+      <ul id="redesop">
+        <a title="Facebook" rel="nofollow" href="http://www.facebook.com" 
+          ><img id="logo" src="https://i0.wp.com/alesteplaza.es/wp-content/uploads/2017/05/facebook-logo-button-1.png?ssl=1" alt="Facebook"></a
+        >
+        <a title="Twitter" rel="nofollow" href="http://www.twitter.com"
+          ><img id="logo" src="https://logoeps.com/wp-content/uploads/2014/02/23681-twitter-logo-icon-vector-icon-vector-eps.png" alt="Twitter"></a
+        >
+        <a title="Youtube" rel="nofollow" href="https://www.youtube.com"
+          ><img id="logo" src="https://www.veryicon.com/download/png/internet--web/iview-3-x-icons/logo-youtube?s=256" alt="Youtube"></a
+        >
+        <a title="Pinterest" rel="nofollow" href="https://www.pinterest.com"
+          ><img id="logo" src="https://logoeps.com/wp-content/uploads/2014/06/1153-pinterest-logo-icon-vector-icon-vector-eps.png" alt="Pinterest"></a
+        >
+        <a title="Instagram" rel="nofollow" href="https://www.instagram.com"
+          ><img id="logo" src="https://cdn.iconscout.com/icon/free/png-256/instagram-logo-3610064-3014829.png" alt="Instagram"></a
+        >
+      </ul>
+    </div>
   </body>
 </html>
