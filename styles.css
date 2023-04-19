@@ -15,9 +15,12 @@
 }
 #barraop {
   position: absolute;
+  top: -15px;
   font-size: x-large;
-  color: black;
   right: 200px;
+}
+a{
+color: black;
 }
 #form {
   position: absolute;
