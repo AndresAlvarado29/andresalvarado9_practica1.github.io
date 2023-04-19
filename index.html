@@ -9,12 +9,50 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
+<script>function cambiar() {
+  var elemento = document.getElementById("miElemento");
+  if (elemento.classList.contains("slide")) {
+    elemento.classList.remove("slide");
+    elemento.classList.add("rotacionT");
+  } else if (elemento.classList.contains("rotacionT")) {
+    elemento.classList.remove("rotacionT");
+    elemento.style.opacity = "0";
+    setTimeout(function() {
+      elemento.style.opacity = "1";
+      elemento.classList.add("slide");
+    }, 1000);
+  } else {
+    elemento.classList.add("slide");
+  }
+  }</script>
   </head>
   <body>
     <div id="barra">
       <ul id="barraop">
       <a href="/">Principal</a>
       <a  href="/formulario.html" aria-current="page">Contacto</a>
+      <button   onclick="cambiar()">Cambiar animacion</button>
+     
+      <div  >
+        <ul id="miElemento">
+        <img id="agrandamiento" class="tamañoimg" src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/in/wp-content/uploads/2022/03/monkey-g412399084_1280.jpg" alt="fotomono">
+        <img class="tamañoimg" src="https://theithacan.org/wp-content/uploads/2022/02/2.8-Cartoon_MikeRoss-3.jpg" alt="fotomono2">
+        <img class="tamañoimg" src="https://guapacho.com/wp-content/uploads/2022/08/boredape_nft-1024x577.jpg" alt="fotomono3">
+        <img class="tamañoimg" src="https://www.neo2.com/wp-content/uploads/2021/12/adidas-originals-metaverso-nfts-web3-2.jpg" alt="fotomono4">
+        <img class="tamañoimg" src="https://www.ceupe.do/images/easyblog_articles/229/b2ap3_medium_NFT_mono.png" alt="fotomono5">
+        <img class="tamañoimg" src="https://media.licdn.com/dms/image/C4D12AQHAc5xnB81cqg/article-cover_image-shrink_600_2000/0/1640018825807?e=2147483647&v=beta&t=mNHnGdydDH2G1bJwzDwVos0MNbYRIlAAzYHDPrAd68U" alt="fotomono6">
+        </ul>
+        <ul id="miElemento">
+        <img class="tamañoimg" src="https://s2.glbimg.com/8-Yy1PL8H6SGHP6JycyOtODjAUM=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2021/c/8/vwEnBlQTOR5JMPV1qigw/captura-de-tela-2021-12-14-114837.jpg" alt="fotomono7">
+        <img class="tamañoimg" src="https://uploads-ssl.webflow.com/5f9a1900790900e2b7f25ba1/62545162b2e07568b0110187_FEATURED_IMAGE-nfts-myths-misconceptions.png" alt="fotomono8">
+        <img class="tamañoimg" src="https://media.tenor.com/NpSs-Ui12zAAAAAM/willyrex-nft.gif" alt="fotowilly">
+        <img class="tamañoimg" src="https://the-defiant-web.s3.amazonaws.com/img/2021/01/24173401/Screen-Shot-2021-01-26-at-2.11.35-PM.png" alt="fotonose10">
+        <img class="tamañoimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnVbBzAxLlaKNM2E_TerlnwsY7QvSEZxp8LjZl-anKKcOeeGrOweeDdLO_XSrl6W0swLY&usqp=CAU=" alt="fotomono11">
+        <img class="tamañoimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIRyc6oLbEO6Tszk6iBPZlSSdDQidthCo3SUQR__vsvAPJxI4fXaT9X8dxEAZ1n8RzIXg&usqp=CAU" alt="fotonigga12">
+        
+        </ul>
+      </div>
+
       </ul>
     </div>
     <main>
