@@ -12,7 +12,7 @@
       http://www.timbiskup.com/contact
       https://www.creativosonline.org/contacto
     -->
-    <script type="module" src="script2.js"></script>
+    <script type="text/javascript" src="validacion.js"></script>
   </head>
   <script>function getLocation() {
     if (navigator.geolocation) {
@@ -46,19 +46,19 @@
         <h1>Formulario de Contacto</h1>
       </main>
       <h3>Nombre Completo</h3>
-      <input placeholder="Nombres" />
-      <input placeholder="Apellidos" />
+      <input id="nombre"  type= text placeholder="Nombres" />
+      <input id="apellido" type= text placeholder="Apellidos" />
       <h3>Email</h3>
-      <input placeholder="Correo electronico" />
+      <input id="correo" type= text placeholder="Correo electronico" />
       <h3>Direccion</h3>
-      <input placeholder="Calle principal" />
-      <input placeholder="Calle secundaria" />
+      <input id="calle" type= text placeholder="Calle principal" />
+      <input type= text placeholder="Calle secundaria (opcional)" />
       <h3>Numero de celular</h3>
-      <input placeholder="0999999999" />
+      <input id="celular" type= text placeholder="0999999999" />
       <h3>Mensaje</h3>
-      <textarea id="textarea"></textarea>
+      <textarea type= text id="textarea"></textarea>
       <!--mensaje de aviso que se envio o de que la informacion esta mal-->
-      <button onclick="enviar()">Enviar</button>
+      <button onclick="validar()">Enviar</button>
     </div>
     <!--informacion y redes sociales-->
     <!--mapa de google-->
