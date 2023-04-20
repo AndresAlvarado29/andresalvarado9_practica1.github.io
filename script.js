@@ -7,7 +7,7 @@ boton.addEventListener('click', function () {
     elemento.classList.add('presentacion');
     var palabra = document.getElementById('palabra');
     palabra.remove();
-    var palabra = document.getElementById('palabra');
+    var palabra = document.getElementById('palabra2');
     palabra.remove();
     var span1 = document.createElement('span');
     span1.innerHTML = 'Bienvenido';
@@ -40,7 +40,7 @@ boton.addEventListener('click', function () {
     palabra2.id = 'palabra';
     palabra2.innerHTML = 'Bienvenidos';
     var palabra3 = document.createElement('h2');
-    palabra3.id = 'palabra';
+    palabra3.id = 'palabra2';
     palabra3.innerHTML = 'Bienvenidos';
     elemento.appendChild(palabra2);
     elemento.appendChild(palabra3);

@@ -4,72 +4,122 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>NFT Andrew</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="anima_tranci.css"/>
-    <script type="module" src="script.js"></script>
-<script>function cambiar() {
-  var elemento = document.getElementById("miElemento");
-  if (elemento.classList.contains("slide")) {
-    elemento.classList.remove("slide");
-    elemento.classList.add("rotacionT");
-  } else if (elemento.classList.contains("rotacionT")) {
-    elemento.classList.remove("rotacionT");
-    elemento.style.opacity = "0";
-    setTimeout(function() {
-      elemento.style.opacity = "1";
-      elemento.classList.add("slide");
-    }, 1000);
-  } else {
-    elemento.classList.add("slide");
-  }
-  }</script>
-  </head>
+    <link rel="stylesheet" href="anima_tranci.css" />
+  <title>NFT Andrew</title>
+  <script type="module" src="script.js"></script>
+  <script>
+    function cambiar() {
+      var elemento = document.getElementById('miElemento');
+      if (elemento.classList.contains('slide')) {
+        elemento.classList.remove('slide');
+        elemento.classList.add('rotacionT');
+      } else if (elemento.classList.contains('rotacionT')) {
+        elemento.classList.remove('rotacionT');
+        elemento.style.opacity = '0';
+        setTimeout(function () {
+          elemento.style.opacity = '1';
+          elemento.classList.add('slide');
+        }, 1000);
+      } else {
+        elemento.classList.add('slide');
+      }
+    }
+  </script>
+</head>
   <body>
-    <div  id="barra">
-      <img id="logoprincipal" src="https://www.multimediaqrcode.com/img/nft.png" alt="logo">
+    <div id="barra">
+      <img
+        id="logoprincipal"
+        src="https://www.multimediaqrcode.com/img/nft.png"
+        alt="logo"
+      />
       <div class="pocicionlogo ptxt">
         <h1>NFTAndrew</h1>
         <h1>NFTAndrew</h1>
-       </div>
-       <section>
-        
-      <ul id="barraop">
-      <a href="./">Principal</a>
-      <a  href="./formulario.html" aria-current="page">Contacto</a>
-      <button class="boton"  onclick="cambiar()">Cambiar Presentacion</button>
-      <button id="boton" >Cambiar Estilo</button>
-     
-      <div class="nftpresentation">
-        <ul id="miElemento">
-        <img id="agrandamiento" class="tamañoimg" src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/in/wp-content/uploads/2022/03/monkey-g412399084_1280.jpg" alt="fotomono">
-        <img class="tamañoimg" src="https://cdn01.segre.com/uploads/imagenes/bajacalidad/2021/12/26/_7200781_663b1eef.jpg?81bdc5fdda9793cfdc3385aede4c87c1" alt="willy2">
-        <img class="tamañoimg" src="https://guapacho.com/wp-content/uploads/2022/08/boredape_nft-1024x577.jpg" alt="fotomono3">
-        <img class="tamañoimg" src="https://www.neo2.com/wp-content/uploads/2021/12/adidas-originals-metaverso-nfts-web3-2.jpg" alt="fotomono4">
-        <img class="tamañoimg" src="https://planetanft.com/wp-content/uploads/2021/12/Doodles4.png" alt="fotohombre5">
-        <img class="tamañoimg" src="https://s2.glbimg.com/8-Yy1PL8H6SGHP6JycyOtODjAUM=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2021/c/8/vwEnBlQTOR5JMPV1qigw/captura-de-tela-2021-12-14-114837.jpg" alt="fotomono6">
-        <img class="tamañoimg" src="https://planetanft.com/wp-content/uploads/2021/12/Doodles-1.png" alt="fotohombre7">
-        <img class="tamañoimg" src="https://uploads-ssl.webflow.com/5f9a1900790900e2b7f25ba1/62545162b2e07568b0110187_FEATURED_IMAGE-nfts-myths-misconceptions.png" alt="fotomono8">
-        <img class="tamañoimg" src="https://media.tenor.com/NpSs-Ui12zAAAAAM/willyrex-nft.gif" alt="fotowilly">
-        <img class="tamañoimg" src="https://the-defiant-web.s3.amazonaws.com/img/2021/01/24173401/Screen-Shot-2021-01-26-at-2.11.35-PM.png" alt="fotonose10">
-        <img class="tamañoimg" src="https://preview.redd.it/hisva82icx881.jpg?auto=webp&s=1c30232b671ef1b442b202a5604752129bdb0a03" alt="fotopiedra11">
-        <img class="tamañoimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIRyc6oLbEO6Tszk6iBPZlSSdDQidthCo3SUQR__vsvAPJxI4fXaT9X8dxEAZ1n8RzIXg&usqp=CAU" alt="fotonigga12">
-      </ul>
       </div>
+
+      <ul id="barraop">
+        <a href="./">Principal</a>
+        <a href="./formulario.html" aria-current="page">Contacto</a>
+        <button class="boton" onclick="cambiar()">Cambiar Presentacion</button>
+        <button id="boton">Cambiar Estilo</button>
+
+        <div class="nftpresentation">
+          <dl id="miElemento">
+            <img
+              id="agrandamiento"
+              class="tamañoimg"
+              src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/in/wp-content/uploads/2022/03/monkey-g412399084_1280.jpg"
+              alt="fotomono"
+            />
+            <img
+              class="tamañoimg"
+              src="https://cdn01.segre.com/uploads/imagenes/bajacalidad/2021/12/26/_7200781_663b1eef.jpg?81bdc5fdda9793cfdc3385aede4c87c1"
+              alt="willy2"
+            />
+            <img
+              class="tamañoimg"
+              src="https://guapacho.com/wp-content/uploads/2022/08/boredape_nft-1024x577.jpg"
+              alt="fotomono3"
+            />
+            <img
+              class="tamañoimg"
+              src="https://www.neo2.com/wp-content/uploads/2021/12/adidas-originals-metaverso-nfts-web3-2.jpg"
+              alt="fotomono4"
+            />
+            <img
+              class="tamañoimg"
+              src="https://planetanft.com/wp-content/uploads/2021/12/Doodles4.png"
+              alt="fotohombre5"
+            />
+            <img
+              class="tamañoimg"
+              src="https://s2.glbimg.com/8-Yy1PL8H6SGHP6JycyOtODjAUM=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2021/c/8/vwEnBlQTOR5JMPV1qigw/captura-de-tela-2021-12-14-114837.jpg"
+              alt="fotomono6"
+            />
+            <img
+              class="tamañoimg"
+              src="https://planetanft.com/wp-content/uploads/2021/12/Doodles-1.png"
+              alt="fotohombre7"
+            />
+            <img
+              class="tamañoimg"
+              src="https://uploads-ssl.webflow.com/5f9a1900790900e2b7f25ba1/62545162b2e07568b0110187_FEATURED_IMAGE-nfts-myths-misconceptions.png"
+              alt="fotomono8"
+            />
+            <img
+              class="tamañoimg"
+              src="https://media.tenor.com/NpSs-Ui12zAAAAAM/willyrex-nft.gif"
+              alt="fotowilly"
+            />
+            <img
+              class="tamañoimg"
+              src="https://the-defiant-web.s3.amazonaws.com/img/2021/01/24173401/Screen-Shot-2021-01-26-at-2.11.35-PM.png"
+              alt="fotonose10"
+            />
+            <img
+              class="tamañoimg"
+              src="https://preview.redd.it/hisva82icx881.jpg?auto=webp&s=1c30232b671ef1b442b202a5604752129bdb0a03"
+              alt="fotopiedra11"
+            />
+            <img
+              class="tamañoimg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIRyc6oLbEO6Tszk6iBPZlSSdDQidthCo3SUQR__vsvAPJxI4fXaT9X8dxEAZ1n8RzIXg&usqp=CAU"
+              alt="fotonigga12"
+            />
+          </dl>
+        </div>
       </ul>
     </div>
     <div id="miLetra" class="content">
       <h2 id="palabra">Bienvenidos</h2>
-      <h2 id="palabra" >Bienvenidos</h2>
+      <h2 id="palabra2">Bienvenidos</h2>
     </div>
-    
-  </section>
-    <main> 
-    </main>
-    <div>
-      
-    </div>
+
+    <main></main>
+    <div></div>
   </body>
 </html>

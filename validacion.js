@@ -37,7 +37,7 @@ function validarT(){
     var expresionRegular = /^[^\d]+$/;
     var valor3=input.value.trim();
     if (!expresionRegular.test(valor3)) {
-      alert("Debe ingresar un número válido.");
+      alert("Debe ingresar un nombre  válido.");
     }
   
 }
